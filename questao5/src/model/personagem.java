@@ -44,6 +44,8 @@ public abstract class personagem {
 
     public abstract void atacar();
 
+    public abstract void atacarAlvo();
+
     protected void adicionarInstancia(personagem instancia) {
         personagens.add(instancia);
     }

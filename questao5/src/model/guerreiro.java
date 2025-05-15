@@ -10,9 +10,13 @@ public class guerreiro extends personagem{
         super(nome, vida, dano);
     }
 
-
     @Override
     public void atacar() {
+        System.out.println("O guerreiro ataca com sua espada!!!");
+    }
+
+    @Override
+    public void atacarAlvo() {
         System.out.println("Informe o alvo:");
         String alvo = sc.nextLine();
         if (encontrarPersonagem(alvo) == null){

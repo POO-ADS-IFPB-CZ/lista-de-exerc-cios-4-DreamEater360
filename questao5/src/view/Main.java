@@ -6,13 +6,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        guerreiro matias = new guerreiro("Matias", 10, 3);
-        mago irineu = new mago("Irineu", 6, 4);
-        arqueiro hoob = new arqueiro("Hoob", 8, 5);
-
+        personagem matias = new guerreiro("Matias", 10, 3);
+        personagem irineu = new mago("Irineu", 6, 4);
+        personagem hoob = new arqueiro("Hoob", 8, 5);
 
         matias.atacar();
-        matias.atacar();
+        irineu.atacar();
+        hoob.atacar();
+
+        matias.atacarAlvo();
+        irineu.atacarAlvo();
+        hoob.atacarAlvo();
 
 
     }
